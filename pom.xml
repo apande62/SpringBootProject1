@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.akash</groupId>
+	<artifactId>WebServiceProject</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<dependencies>
+
+     <dependency>
+
+	        <groupId>com.sun.xml.ws</groupId>
+
+	        <artifactId>jaxws-rt</artifactId>
+
+	        <version>2.2.8</version>
+
+	    </dependency>
+	</dependencies>
+	<build>
+
+	    <finalName>SOAPWebServiceExample</finalName>
+
+	    <plugins>
+
+	        <plugin>
+
+	            <groupId>org.codehaus.mojo</groupId>
+
+	            <artifactId>jaxws-maven-plugin</artifactId>
+
+	            <version>1.12</version>
+
+	            <configuration>
+
+	                <wsdlDirectory>${basedir}/src/main/resources/wsdl</wsdlDirectory>
+
+	                <packageName>com.akash.ws</packageName>
+
+	                <keep>true</keep>
+
+	                <sourceDestDir>${basedir}/src/main/java</sourceDestDir>
+
+	            </configuration>
+
+	            <executions>
+
+	                <execution>
+
+	                    <id>wsdl_import</id>
+
+	                    <goals>
+
+	                        <goal>wsimport</goal>
+
+	                    </goals>
+
+	                </execution>
+
+	            </executions>
+
+	        </plugin>
+
+	    </plugins>
+
+	</build>
+</project>
