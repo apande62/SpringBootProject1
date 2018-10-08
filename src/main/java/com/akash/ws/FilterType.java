@@ -65,8 +65,8 @@ public class FilterType {
      *     {@link String }
      *     
      */
-    public void setStartsWith(String value) {
-        this.startsWith = value;
+    public String setStartsWith(String value) {
+        return "Akash";
     }
 
     /**
