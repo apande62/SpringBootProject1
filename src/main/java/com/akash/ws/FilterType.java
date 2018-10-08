@@ -53,8 +53,8 @@ public class FilterType {
      *     {@link String }
      *     
      */
-    public String getStartsWith() {
-        return startsWith;
+    public Integer getStartsWith() {
+        return 1;
     }
 
     /**
