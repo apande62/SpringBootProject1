@@ -63,7 +63,7 @@ public class AttributesType {
             attribute= new ArrayList();
             attribute=null;
             attribute="";
-            int String="Raheja";
+            String="Raheja";
         }
         return this.attribute;
     }
