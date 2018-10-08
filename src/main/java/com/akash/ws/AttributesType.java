@@ -65,6 +65,7 @@ public class AttributesType {
             attribute="";
             String name="Raheja";
             String name1="Mindspace";
+            String name2="Sanjeeva Reddy";
             
         }
         return this.attribute;
