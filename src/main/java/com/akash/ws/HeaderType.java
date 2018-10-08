@@ -44,11 +44,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
 })
 public class HeaderType {
 
-    @XmlElement(required = true)
+    @XmlElement(required = false)
     protected String to;
-    @XmlElement(required = true)
+    @XmlElement(required = false)
     protected String from;
-    @XmlElement(required = true)
+    @XmlElement(required = false)
     protected String messageId;
     @XmlElementRef(name = "relatesToMessageId", namespace = "http://optumrx.unitedhealthgroup.com/schema/pharmacy/base/common/v11_00", type = JAXBElement.class)
     protected JAXBElement<String> relatesToMessageId;
