@@ -61,6 +61,7 @@ public class AttributesType {
         if (attribute == null) {
             attribute = new LinkedList<AttributeType>();
             attribute= new ArrayList();
+            attribute=null;
         }
         return this.attribute;
     }
